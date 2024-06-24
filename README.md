@@ -1,4 +1,5 @@
 
+
 # E-Book System
 
 This project is a comprehensive online e-book store developed for E-Book PVT LTD, a prominent secondhand book seller in Sri Lanka. The system is part of the CS6004ES Application Development module and leverages the ASP.NET MVC architecture to provide a robust web application.
@@ -10,6 +11,7 @@ This project is a comprehensive online e-book store developed for E-Book PVT LTD
   - [Install Visual Studio](#install-visual-studio)
   - [Install SQL Server](#install-sql-server)
   - [Install SQL Server Management Studio (SSMS)](#install-sql-server-management-studio-ssms)
+  - [Clone the Repository](#clone-the-repository)
   - [Setting Up the ASP.NET Project](#setting-up-the-aspnet-project)
 - [Usage](#usage)
   - [Customer Manual](#customer-manual)
@@ -67,18 +69,35 @@ Ensure your system meets the following requirements:
 2. **Run the Installer:**
    - Follow the on-screen instructions to install SSMS
 
+### Clone the Repository
+1. **Install Git:**
+   - If you don't have Git installed, download and install it from the [Git website](https://git-scm.com/)
+2. **Clone the Repository:**
+   - Open a command prompt or terminal
+   - Run the following command to clone the repository:
+     ```bash
+     git clone https://github.com/Sahiru2007/EBook-Management-system-.git
+     ```
+   - Navigate to the cloned repository directory:
+     ```bash
+     cd EBook-Management-system-
+     ```
+
 ### Setting Up the ASP.NET Project
 1. **Open Visual Studio:**
    - Launch Visual Studio on your system
-2. **Create a New Project:**
-   - Select "Create a new project"
-   - Choose "ASP.NET Web Application" or "ASP.NET Core Web Application" based on your requirements
-3. **Configure the Project:**
-   - Select the appropriate template (e.g., MVC, Web API)
-   - Set your project configurations (project name, location, etc.)
-4. **Restore NuGet Packages:**
+2. **Open the Project:**
+   - Click on "Open a project or solution"
+   - Navigate to the cloned repository directory and select the `.sln` file
+3. **Restore NuGet Packages:**
    - Open the NuGet Package Manager Console (Tools > NuGet Package Manager > Package Manager Console)
    - Run the command `Update-Package -reinstall` to restore any missing packages
+4. **Update Database Connection String:**
+   - Open `appsettings.json` or `Web.config` (depending on your project setup)
+   - Update the connection string to match your SQL Server instance details
+5. **Run the Database Migrations:**
+   - Open the Package Manager Console
+   - Run the command `Update-Database` to apply migrations and create the database schema
 
 ## Usage
 
@@ -152,3 +171,6 @@ Reflective letters from team members are included, highlighting the challenges f
 ## Conclusion
 The E-Book System project successfully modernizes E-Book PVT LTD's business model, enhancing operational efficiency and customer engagement. The project showcases the application of theoretical knowledge in a practical setting, providing valuable insights into web application development using ASP.NET MVC.
 
+---
+
+This detailed `README.md` file provides all the necessary information about your E-Book System project, including features, installation instructions, usage guidelines, and more.
